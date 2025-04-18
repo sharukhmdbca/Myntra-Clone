@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Map</title>
+    <style>
+     
+      .box {
+        border: 2px solid black;
+        height: 400px;
+        width: 90%;
+      }
+      .row1 {
+        border: 1px solid black;
+        display: flex;
+        text-align: center;
+        
+        
+      }
+      .mixed {
+        height: 120px;
+        width: 110px;
+        border: 1px solid;
+        display: inline-flex;
+      }
+      .ob {
+        height: 30px;
+        width: 35px;
+        border: 2px solid;
+        position: absolute;
+      }
+      .stairs {
+        border: 1px solid;
+        height: 100%;
+        display: block;
+        width: 35%;
+        opacity: 0.3;
+      }
+      .img {
+        height: 100%;
+        width: 100%;
+      }
+      .bathroom {
+        border: 1px solid;
+        height: 100%;
+        width: 65%;
+        position: static;
+        
+      }
+      .room1 {
+        border:1px solid;
+        display: flex;
+        width: 30%;
+        text-align: center;
+        justify-content: center;
+        justify-content: space-between;
+        text-align: center;
+      }
+        .row2 {
+            border: 1px solid;
+            display: flex;
+            height: 35%;
+            justify-content: end;
+        }
+        .kitchen {
+            border: 1px solid;
+            height: 100%;
+            width: 15%;
+            text-align: center;    
+          }
+          .row3 {
+            border: 1px solid;
+            height: 136px;
+            z-index: 2;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+          }
+          .kothli {
+            border: 1px solid;
+            height: 100%;
+            width: 30%;
+          }
+          .kothli:hover {
+            background-color: burlywood;
+          }
+          .row3:hover {
+            background-color: aqua;
+          }
+          .ob:hover {
+            background-color: red;
+          }
+          .row2:hover {
+            background-color: cornflowerblue;
+          }
+          .kitchen:hover {
+            background-color: yellow;
+          }
+          .bathroom:hover {
+            background-color: skyblue;
+          }
+          #room1:hover {
+            background-color: cyan;
+          }
+          #room2:hover {
+            background-color: aquamarine;
+          }
+          #room3:hover {
+            background-color: chartreuse;
+          }
+        
+
+          
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="row1">
+        <div class="mixed">
+          <nav class="ob">OB</nav>
+          <nav class="stairs">
+            <img src="./Images/stairs2.jpg" alt="STAIRS" class="img">
+          </nav>
+          <nav class="bathroom">Inner Bath</nav>
+        </div>
+        <div class="room1" id="room1">Room 1</div>
+        <div class="room1" id="room2">Room 2</div>
+        <div class="room1" id="room3">Room 3</div>
+      </div>
+      <div class="row2">
+       <div class="kitchen">kitchen</div>
+      </div>
+      <div class="row3">
+        <div class="kothli">kothli 1</div>
+        <div class="kothli">kothli 2</div>
+
+      </div>
+    </div>
+  </body>
+</html>
